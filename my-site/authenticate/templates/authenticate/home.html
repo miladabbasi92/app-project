@@ -1,0 +1,16 @@
+{% extends 'authenticate/base.html'%}
+{% block content%}
+
+<h2>Welcome to the app :) </h2>
+
+{% if user.is_authenticated %}
+
+	<p>Username: {{ user.username }} </p>
+	<p>Name: {{ user.first_name }} </p>
+	<p>Email: {{ user.email }} </p>
+
+
+
+{% endif %}
+
+{% endblock %}
